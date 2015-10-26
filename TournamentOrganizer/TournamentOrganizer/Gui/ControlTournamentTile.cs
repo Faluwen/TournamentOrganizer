@@ -3,7 +3,7 @@
 namespace TournamentOrganizer.Gui
 {
     public partial class ControlTournamentTile : UserControl
-    { 
+    {
         public ControlTournamentTile()
         {
             InitializeComponent();
