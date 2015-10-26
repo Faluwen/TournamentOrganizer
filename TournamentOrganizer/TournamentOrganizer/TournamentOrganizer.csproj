@@ -68,6 +68,30 @@
     <Compile Include="Gui\ControlCreateEventPhase1.Designer.cs">
       <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2.Designer.cs">
+      <DependentUpon>ControlCreateEventPhase2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2BracketSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2BracketSingle.Designer.cs">
+      <DependentUpon>ControlCreateEventPhase2BracketSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2RoundRobin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase2RoundRobin.Designer.cs">
+      <DependentUpon>ControlCreateEventPhase2RoundRobin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase3.Designer.cs">
+      <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\ControlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +142,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\ControlCreateEventPhase1.resx">
       <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateEventPhase2.resx">
+      <DependentUpon>ControlCreateEventPhase2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateEventPhase2BracketSingle.resx">
+      <DependentUpon>ControlCreateEventPhase2BracketSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateEventPhase2RoundRobin.resx">
+      <DependentUpon>ControlCreateEventPhase2RoundRobin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateEventPhase3.resx">
+      <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\ControlLogin.resx">
       <DependentUpon>ControlLogin.cs</DependentUpon>

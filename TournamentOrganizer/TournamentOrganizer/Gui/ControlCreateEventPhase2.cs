@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TournamentOrganizer.Gui
 {
-    public partial class ControlCreateEventPhase1 : UserControl
-    { 
-        public ControlCreateEventPhase1()
+    public partial class ControlCreateEventPhase2 : UserControl
+    {
+        public ControlCreateEventPhase2()
         {
             InitializeComponent();
         }

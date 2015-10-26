@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TournamentOrganizer.Gui
 {
-    public partial class ControlCreateEventPhase1 : UserControl
-    { 
-        public ControlCreateEventPhase1()
+    public partial class ControlCreateEventPhase2BracketSingle : UserControl
+    {
+        public ControlCreateEventPhase2BracketSingle()
         {
             InitializeComponent();
-        }
-
-        private void buttonWeiter_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
         }
     }
 }

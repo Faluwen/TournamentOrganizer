@@ -37,6 +37,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.controlCreateEvent1 = new TournamentOrganizer.Gui.ControlCreateEvent();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRibbon)).BeginInit();
             this.splitContainerRibbon.Panel1.SuspendLayout();
             this.splitContainerRibbon.Panel2.SuspendLayout();
@@ -44,6 +45,7 @@
             this.tabControlRibbon.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panelContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerRibbon
@@ -161,11 +163,20 @@
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.controlCreateEvent1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(0, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(875, 461);
             this.panelContent.TabIndex = 0;
+            // 
+            // controlCreateEvent1
+            // 
+            this.controlCreateEvent1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlCreateEvent1.Location = new System.Drawing.Point(0, 0);
+            this.controlCreateEvent1.Name = "controlCreateEvent1";
+            this.controlCreateEvent1.Size = new System.Drawing.Size(875, 461);
+            this.controlCreateEvent1.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -184,6 +195,7 @@
             this.tabControlRibbon.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.panelContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -198,5 +210,6 @@
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Button buttonBeenden;
         private System.Windows.Forms.Button button2;
+        private ControlCreateEvent controlCreateEvent1;
     }
 }
