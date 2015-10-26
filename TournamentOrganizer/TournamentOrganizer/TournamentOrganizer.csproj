@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26C334B4-866E-4A7C-8006-26DED4ECAA92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TournamentOrganizer</RootNamespace>
+    <AssemblyName>TournamentOrganizer</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="Controller\StartController.cs" />
+    <Compile Include="Data\Enumerations\Games.cs" />
+    <Compile Include="Data\Enumerations\MatchFormate.cs" />
+    <Compile Include="Data\Enumerations\TurnierFormate.cs" />
+    <Compile Include="Data\Session.cs" />
+    <Compile Include="Data\Enumerations\TurnierModi.cs" />
+    <Compile Include="Gui\ControlCreateEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEvent.Designer.cs">
+      <DependentUpon>ControlCreateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateEventPhase1.Designer.cs">
+      <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlLogin.Designer.cs">
+      <DependentUpon>ControlLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlRegister.Designer.cs">
+      <DependentUpon>ControlRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlTournamentTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlTournamentTile.Designer.cs">
+      <DependentUpon>ControlTournamentTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ControlTournamentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlTournamentView.Designer.cs">
+      <DependentUpon>ControlTournamentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\DatabaseManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gui\ControlCreateEvent.resx">
+      <DependentUpon>ControlCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateEventPhase1.resx">
+      <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlLogin.resx">
+      <DependentUpon>ControlLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlRegister.resx">
+      <DependentUpon>ControlRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlTournamentTile.resx">
+      <DependentUpon>ControlTournamentTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlTournamentView.resx">
+      <DependentUpon>ControlTournamentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meandsomerandoms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meandsomerandoms_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Event_Hearthstone.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
