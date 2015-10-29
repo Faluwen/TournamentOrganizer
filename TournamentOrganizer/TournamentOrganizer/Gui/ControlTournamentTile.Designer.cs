@@ -1,4 +1,4 @@
-﻿namespace TournamentOrganizer.Gui
+﻿namespace EventOrganizer.Gui
 {
     partial class ControlTournamentTile
     {
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::TournamentOrganizer.Properties.Resources.Event_Hearthstone;
+            this.BackgroundImage = global::EventOrganizer.Properties.Resources.Event_Hearthstone;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

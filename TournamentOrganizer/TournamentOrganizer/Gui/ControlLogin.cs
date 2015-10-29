@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TournamentOrganizer.Gui
+namespace EventOrganizer.Gui
 {
     public partial class ControlLogin : UserControl
     {

@@ -1,4 +1,4 @@
-﻿namespace TournamentOrganizer.Gui
+﻿namespace EventOrganizer.Gui
 {
     partial class ControlCreateEvent
     {
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.controlCreateEventPhase11 = new TournamentOrganizer.Gui.ControlCreateEventPhase1();
-            this.controlCreateEventPhase21 = new TournamentOrganizer.Gui.ControlCreateEventPhase2();
-            this.controlCreateEventPhase31 = new TournamentOrganizer.Gui.ControlCreateEventPhase3();
+            this.controlCreateEventPhase11 = new EventOrganizer.Gui.ControlCreateEventPhase1();
+            this.controlCreateEventPhase21 = new EventOrganizer.Gui.ControlCreateEventPhase2();
+            this.controlCreateEventPhase31 = new EventOrganizer.Gui.ControlCreateEventPhase3();
             this.SuspendLayout();
             // 
             // controlCreateEventPhase11

@@ -1,4 +1,4 @@
-﻿namespace TournamentOrganizer.Gui
+﻿namespace EventOrganizer.Gui
 {
     partial class FormRegister
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
-            this.controlRegister1 = new TournamentOrganizer.Gui.ControlRegister();
+            this.controlRegister1 = new EventOrganizer.Gui.ControlRegister();
             this.SuspendLayout();
             // 
             // controlRegister1

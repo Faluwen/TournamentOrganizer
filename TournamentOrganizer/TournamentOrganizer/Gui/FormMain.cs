@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TournamentOrganizer.Gui
+namespace EventOrganizer.Gui
 {
     public partial class FormMain : Form
     {
         public FormMain()
         {
             InitializeComponent();
-            tabControlRibbon.TabPages.Remove(tabPage2);
+            tabControlRibbon.TabPages.Remove(tabPageAdmin);
         }
 
         private void buttonBeenden_Click(object sender, EventArgs e)
@@ -25,14 +25,14 @@ namespace TournamentOrganizer.Gui
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tabControlRibbon.TabPages.Remove(tabPage1);
-            tabControlRibbon.TabPages.Add(tabPage2);
+            tabControlRibbon.TabPages.Remove(tabPageStartseite);
+            tabControlRibbon.TabPages.Add(tabPageAdmin);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            tabControlRibbon.TabPages.Remove(tabPage2);
-            tabControlRibbon.TabPages.Add(tabPage1);
+            tabControlRibbon.TabPages.Remove(tabPageAdmin);
+            tabControlRibbon.TabPages.Add(tabPageStartseite);
         }
     }
 }

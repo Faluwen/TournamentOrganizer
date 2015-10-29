@@ -1,7 +1,7 @@
 ﻿using System;
-using TournamentOrganizer.Controller;
+using EventOrganizer.Controller;
 
-namespace TournamentOrganizer
+namespace EventOrganizer
 {
     static class Program
     {

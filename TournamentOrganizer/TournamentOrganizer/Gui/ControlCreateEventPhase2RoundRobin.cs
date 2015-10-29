@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TournamentOrganizer.Gui
+namespace EventOrganizer.Gui
 {
     public partial class ControlCreateEventPhase2RoundRobin : UserControl
     {

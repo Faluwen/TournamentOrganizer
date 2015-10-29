@@ -1,8 +1,8 @@
 ﻿using System.Threading;
 using System.Windows.Forms;
-using TournamentOrganizer.Gui;
+using EventOrganizer.Gui;
 
-namespace TournamentOrganizer.Controller
+namespace EventOrganizer.Controller
 {
     public class StartController
     {

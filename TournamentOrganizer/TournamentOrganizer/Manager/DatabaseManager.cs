@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TournamentOrganizer.Manager
+namespace EventOrganizer.Manager
 {
     public class DatabaseManager
     {

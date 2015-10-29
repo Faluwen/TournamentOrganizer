@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace TournamentOrganizer.Gui
+namespace EventOrganizer.Gui
 {
     public partial class ControlTournamentTile : UserControl
     {

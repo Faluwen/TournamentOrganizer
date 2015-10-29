@@ -1,4 +1,4 @@
-﻿namespace TournamentOrganizer.Gui
+﻿namespace EventOrganizer.Gui
 {
     partial class ControlCreateEventPhase2BracketSingle
     {

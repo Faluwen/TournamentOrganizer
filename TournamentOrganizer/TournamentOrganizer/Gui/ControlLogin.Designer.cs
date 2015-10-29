@@ -1,4 +1,4 @@
-﻿namespace TournamentOrganizer.Gui
+﻿namespace EventOrganizer.Gui
 {
     partial class ControlLogin
     {
@@ -101,7 +101,7 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.BackgroundImage = global::TournamentOrganizer.Properties.Resources.meandsomerandoms;
+            this.panelLogo.BackgroundImage = global::EventOrganizer.Properties.Resources.meandsomerandoms;
             this.panelLogo.Location = new System.Drawing.Point(31, 3);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 200);

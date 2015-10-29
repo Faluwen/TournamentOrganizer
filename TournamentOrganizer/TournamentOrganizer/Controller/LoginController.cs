@@ -1,6 +1,7 @@
-﻿using TournamentOrganizer.Data;
+﻿using System;
+using EventOrganizer.Data;
 
-namespace TournamentOrganizer.Controller
+namespace EventOrganizer.Controller
 {
     public class LoginController
     {
@@ -12,6 +13,11 @@ namespace TournamentOrganizer.Controller
         {
             fehlermeldung = "";
             return null;
+        }
+
+        internal void Register(string username, string password, out string fehlermeldung)
+        {
+            fehlermeldung = String.Empty;
         }
     }
 }

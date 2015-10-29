@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TournamentOrganizer.Data
+namespace EventOrganizer.Data
 {
     public class Session
     {
