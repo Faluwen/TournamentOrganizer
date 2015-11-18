@@ -13,6 +13,7 @@
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,135 +67,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\StartController.cs" />
     <Compile Include="Data\Enumerations\Games.cs" />
     <Compile Include="Data\Enumerations\MatchFormate.cs" />
     <Compile Include="Data\Enumerations\TurnierFormate.cs" />
-    <Compile Include="Data\Session.cs" />
     <Compile Include="Data\Enumerations\TurnierModi.cs" />
-    <Compile Include="Gui\ControlCreateEvent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEvent.Designer.cs">
-      <DependentUpon>ControlCreateEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase1.Designer.cs">
-      <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2.Designer.cs">
-      <DependentUpon>ControlCreateEventPhase2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2BracketSingle.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2BracketSingle.Designer.cs">
-      <DependentUpon>ControlCreateEventPhase2BracketSingle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2RoundRobin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase2RoundRobin.Designer.cs">
-      <DependentUpon>ControlCreateEventPhase2RoundRobin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase3.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlCreateEventPhase3.Designer.cs">
-      <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlLogin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlLogin.Designer.cs">
-      <DependentUpon>ControlLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlRegister.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlRegister.Designer.cs">
-      <DependentUpon>ControlRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlTournamentTile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlTournamentTile.Designer.cs">
-      <DependentUpon>ControlTournamentTile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\ControlTournamentView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gui\ControlTournamentView.Designer.cs">
-      <DependentUpon>ControlTournamentView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gui\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gui\FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gui\FormRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Gui\FormRegister.Designer.cs">
-      <DependentUpon>FormRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manager\CryptManager.cs" />
     <Compile Include="Manager\DatabaseManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\ErrorLog.cs" />
-    <EmbeddedResource Include="Gui\ControlCreateEvent.resx">
-      <DependentUpon>ControlCreateEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlCreateEventPhase1.resx">
-      <DependentUpon>ControlCreateEventPhase1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlCreateEventPhase2.resx">
-      <DependentUpon>ControlCreateEventPhase2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlCreateEventPhase2BracketSingle.resx">
-      <DependentUpon>ControlCreateEventPhase2BracketSingle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlCreateEventPhase2RoundRobin.resx">
-      <DependentUpon>ControlCreateEventPhase2RoundRobin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlCreateEventPhase3.resx">
-      <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlLogin.resx">
-      <DependentUpon>ControlLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlRegister.resx">
-      <DependentUpon>ControlRegister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlTournamentTile.resx">
-      <DependentUpon>ControlTournamentTile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\ControlTournamentView.resx">
-      <DependentUpon>ControlTournamentView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gui\FormRegister.resx">
-      <DependentUpon>FormRegister.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -272,6 +151,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

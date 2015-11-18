@@ -1,6 +1,5 @@
 ﻿using System.Threading;
 using System.Windows.Forms;
-using EventOrganizer.Gui;
 
 namespace EventOrganizer.Controller
 {
@@ -19,23 +18,23 @@ namespace EventOrganizer.Controller
                 if (neugestartet)
                 {
 
-                    Application.EnableVisualStyles();
-                    Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new FormMain());
+                    //Application.EnableVisualStyles();
+                    //Application.SetCompatibleTextRenderingDefault(false);
+                    //Application.Run(new FormMain());
 
                     // Anmeldeform anzeigen
-                    using (FormLogin login = new FormLogin())
-                    {
-                        DialogResult result = login.ShowDialog();
-                        if (result == DialogResult.OK)
-                        {
-                            // Programm starten
-                            Application.EnableVisualStyles();
-                            Application.SetCompatibleTextRenderingDefault(false);
-                            Application.Run(new FormLogin());
+                    //using (FormLogin login = new FormLogin())
+                    //{
+                    //    DialogResult result = login.ShowDialog();
+                    //    if (result == DialogResult.OK)
+                    //    {
+                    //        // Programm starten
+                    //        Application.EnableVisualStyles();
+                    //        Application.SetCompatibleTextRenderingDefault(false);
+                    //        Application.Run(new FormLogin());
 
-                        }
-                    }
+                    //    }
+                    //}
                 }
                 else
                 {
