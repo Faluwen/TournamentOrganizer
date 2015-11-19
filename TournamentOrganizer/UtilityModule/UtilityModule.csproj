@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Match.cs" />
     <Compile Include="Data\Player.cs" />
     <Compile Include="Data\Session.cs" />
     <Compile Include="Data\Enumerations\Games.cs" />

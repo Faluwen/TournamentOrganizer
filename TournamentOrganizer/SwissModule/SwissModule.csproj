@@ -46,12 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\PlayerSwiss.cs" />
     <Compile Include="Friends.cs" />
+    <Compile Include="Manager\SwissManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Manager\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\UtilityModule\UtilityModule.csproj">
       <Project>{511f17ff-1544-4310-9af4-67c0bbd41265}</Project>
