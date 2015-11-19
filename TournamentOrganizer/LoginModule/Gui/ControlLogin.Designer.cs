@@ -52,7 +52,6 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(6, 285);
             this.textBoxPassword.Name = "textBoxPassword";
@@ -62,11 +61,10 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsername.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(6, 235);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(253, 21);
+            this.textBoxUsername.Size = new System.Drawing.Size(253, 22);
             this.textBoxUsername.TabIndex = 11;
             // 
             // linkLabelRegister
@@ -111,6 +109,7 @@
             // 
             // ControlLogin
             // 
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);

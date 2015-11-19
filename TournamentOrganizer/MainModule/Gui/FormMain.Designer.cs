@@ -32,7 +32,6 @@
             this.splitContainerRibbon = new System.Windows.Forms.SplitContainer();
             this.tabControlRibbon = new System.Windows.Forms.TabControl();
             this.tabPageStartseite = new System.Windows.Forms.TabPage();
-            this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonSwiss = new System.Windows.Forms.Button();
             this.buttonBeenden = new System.Windows.Forms.Button();
             this.tabPageAdmin = new System.Windows.Forms.TabPage();
@@ -85,7 +84,6 @@
             // tabPageStartseite
             // 
             this.tabPageStartseite.BackColor = System.Drawing.Color.White;
-            this.tabPageStartseite.Controls.Add(this.buttonLogout);
             this.tabPageStartseite.Controls.Add(this.buttonSwiss);
             this.tabPageStartseite.Controls.Add(this.buttonBeenden);
             this.tabPageStartseite.Location = new System.Drawing.Point(4, 22);
@@ -94,25 +92,6 @@
             this.tabPageStartseite.Size = new System.Drawing.Size(867, 71);
             this.tabPageStartseite.TabIndex = 0;
             this.tabPageStartseite.Text = "Startseite";
-            // 
-            // buttonLogout
-            // 
-            this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLogout.BackColor = System.Drawing.Color.White;
-            this.buttonLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonLogout.FlatAppearance.BorderSize = 0;
-            this.buttonLogout.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogout.Image = global::MainModule.Properties.Resources.key1_delete;
-            this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonLogout.Location = new System.Drawing.Point(708, 6);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(80, 60);
-            this.buttonLogout.TabIndex = 3;
-            this.buttonLogout.Text = "Ausloggen";
-            this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonLogout.UseVisualStyleBackColor = false;
             // 
             // buttonSwiss
             // 
@@ -176,9 +155,9 @@
             this.buttonBeenden2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBeenden2.Image = global::MainModule.Properties.Resources.exit;
             this.buttonBeenden2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonBeenden2.Location = new System.Drawing.Point(780, 6);
+            this.buttonBeenden2.Location = new System.Drawing.Point(794, 6);
             this.buttonBeenden2.Name = "buttonBeenden2";
-            this.buttonBeenden2.Size = new System.Drawing.Size(79, 60);
+            this.buttonBeenden2.Size = new System.Drawing.Size(65, 60);
             this.buttonBeenden2.TabIndex = 2;
             this.buttonBeenden2.Text = "Beenden";
             this.buttonBeenden2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -254,7 +233,6 @@
         private System.Windows.Forms.Button buttonAddEvent;
         private System.Windows.Forms.Button buttonSwiss;
         private System.Windows.Forms.Button buttonBeenden2;
-        private System.Windows.Forms.Button buttonLogout;
         private EventModule.Gui.ControlCreateSwiss controlCreateSwiss;
     }
 }
