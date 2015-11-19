@@ -21,12 +21,12 @@ namespace LoginModule.Gui
 
         private bool ValidatePassword()
         {
-            return String.IsNullOrEmpty(this.textBoxPassword.Text);
+            return !String.IsNullOrEmpty(this.textBoxPassword.Text);
         }
 
         private bool ValidateUsername()
         {
-            return String.IsNullOrEmpty(this.textBoxUsername.Text);
+            return !String.IsNullOrEmpty(this.textBoxUsername.Text);
         }
 
         private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -44,6 +44,18 @@ namespace LoginModule.Gui
             if (ValidateTextEdits())
             {
                 session = LoginController.Instance.Login(this.textBoxUsername.Text, CryptManager.Encrypt(this.textBoxPassword.Text));
+                if (session != null)
+                {
+                    (this.ParentForm as FormLogin).DialogResult = DialogResult.OK;
+                }
+            }
+        }
+
+        internal Session Session
+        {
+            get
+            {
+                return this.session;
             }
         }
     }

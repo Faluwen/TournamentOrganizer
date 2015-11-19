@@ -34,5 +34,10 @@ namespace MainModule.Gui
             tabControlRibbon.TabPages.Remove(tabPageAdmin);
             tabControlRibbon.TabPages.Add(tabPageStartseite);
         }
+
+        private void buttonSwiss_Click(object sender, EventArgs e)
+        {
+            controlCreateSwiss.Visible = true;
+        }
     }
 }

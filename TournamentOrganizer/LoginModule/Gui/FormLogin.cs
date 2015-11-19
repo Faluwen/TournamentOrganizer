@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using UtilityModule.Data;
 
 namespace LoginModule.Gui
 {
@@ -7,6 +8,14 @@ namespace LoginModule.Gui
         public FormLogin()
         {
             InitializeComponent();
+        }
+
+        internal Session Session
+        {
+            get
+            {
+                return controlLogin1.Session;
+            }
         }
     }
 }

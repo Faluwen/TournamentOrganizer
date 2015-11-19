@@ -32,14 +32,14 @@
             this.splitContainerRibbon = new System.Windows.Forms.SplitContainer();
             this.tabControlRibbon = new System.Windows.Forms.TabControl();
             this.tabPageStartseite = new System.Windows.Forms.TabPage();
+            this.buttonLogout = new System.Windows.Forms.Button();
+            this.buttonSwiss = new System.Windows.Forms.Button();
+            this.buttonBeenden = new System.Windows.Forms.Button();
             this.tabPageAdmin = new System.Windows.Forms.TabPage();
+            this.buttonBeenden2 = new System.Windows.Forms.Button();
             this.buttonAddEvent = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonAllEvents = new System.Windows.Forms.Button();
-            this.buttonBeenden = new System.Windows.Forms.Button();
-            this.buttonMyEvents = new System.Windows.Forms.Button();
-            this.buttonBeenden2 = new System.Windows.Forms.Button();
+            this.controlCreateSwiss = new EventModule.Gui.ControlCreateSwiss();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRibbon)).BeginInit();
             this.splitContainerRibbon.Panel1.SuspendLayout();
             this.splitContainerRibbon.Panel2.SuspendLayout();
@@ -47,6 +47,7 @@
             this.tabControlRibbon.SuspendLayout();
             this.tabPageStartseite.SuspendLayout();
             this.tabPageAdmin.SuspendLayout();
+            this.panelContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerRibbon
@@ -85,15 +86,72 @@
             // 
             this.tabPageStartseite.BackColor = System.Drawing.Color.White;
             this.tabPageStartseite.Controls.Add(this.buttonLogout);
-            this.tabPageStartseite.Controls.Add(this.buttonAllEvents);
+            this.tabPageStartseite.Controls.Add(this.buttonSwiss);
             this.tabPageStartseite.Controls.Add(this.buttonBeenden);
-            this.tabPageStartseite.Controls.Add(this.buttonMyEvents);
             this.tabPageStartseite.Location = new System.Drawing.Point(4, 22);
             this.tabPageStartseite.Name = "tabPageStartseite";
             this.tabPageStartseite.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageStartseite.Size = new System.Drawing.Size(867, 71);
             this.tabPageStartseite.TabIndex = 0;
             this.tabPageStartseite.Text = "Startseite";
+            // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogout.BackColor = System.Drawing.Color.White;
+            this.buttonLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonLogout.FlatAppearance.BorderSize = 0;
+            this.buttonLogout.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.Image = global::MainModule.Properties.Resources.key1_delete;
+            this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonLogout.Location = new System.Drawing.Point(708, 6);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(80, 60);
+            this.buttonLogout.TabIndex = 3;
+            this.buttonLogout.Text = "Ausloggen";
+            this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonLogout.UseVisualStyleBackColor = false;
+            // 
+            // buttonSwiss
+            // 
+            this.buttonSwiss.BackColor = System.Drawing.Color.White;
+            this.buttonSwiss.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonSwiss.FlatAppearance.BorderSize = 0;
+            this.buttonSwiss.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonSwiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSwiss.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSwiss.Image = global::MainModule.Properties.Resources.joypad;
+            this.buttonSwiss.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonSwiss.Location = new System.Drawing.Point(8, 6);
+            this.buttonSwiss.Name = "buttonSwiss";
+            this.buttonSwiss.Size = new System.Drawing.Size(80, 60);
+            this.buttonSwiss.TabIndex = 2;
+            this.buttonSwiss.Text = "Swiss Event";
+            this.buttonSwiss.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonSwiss.UseVisualStyleBackColor = false;
+            this.buttonSwiss.Click += new System.EventHandler(this.buttonSwiss_Click);
+            // 
+            // buttonBeenden
+            // 
+            this.buttonBeenden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBeenden.BackColor = System.Drawing.Color.White;
+            this.buttonBeenden.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonBeenden.FlatAppearance.BorderSize = 0;
+            this.buttonBeenden.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonBeenden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBeenden.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBeenden.Image = global::MainModule.Properties.Resources.exit;
+            this.buttonBeenden.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonBeenden.Location = new System.Drawing.Point(794, 6);
+            this.buttonBeenden.Name = "buttonBeenden";
+            this.buttonBeenden.Size = new System.Drawing.Size(65, 60);
+            this.buttonBeenden.TabIndex = 1;
+            this.buttonBeenden.Text = "Beenden";
+            this.buttonBeenden.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBeenden.UseVisualStyleBackColor = false;
+            this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
             // 
             // tabPageAdmin
             // 
@@ -106,6 +164,25 @@
             this.tabPageAdmin.TabIndex = 1;
             this.tabPageAdmin.Text = "Adminbereich";
             this.tabPageAdmin.UseVisualStyleBackColor = true;
+            // 
+            // buttonBeenden2
+            // 
+            this.buttonBeenden2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBeenden2.BackColor = System.Drawing.Color.White;
+            this.buttonBeenden2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonBeenden2.FlatAppearance.BorderSize = 0;
+            this.buttonBeenden2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonBeenden2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBeenden2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBeenden2.Image = global::MainModule.Properties.Resources.exit;
+            this.buttonBeenden2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonBeenden2.Location = new System.Drawing.Point(780, 6);
+            this.buttonBeenden2.Name = "buttonBeenden2";
+            this.buttonBeenden2.Size = new System.Drawing.Size(79, 60);
+            this.buttonBeenden2.TabIndex = 2;
+            this.buttonBeenden2.Text = "Beenden";
+            this.buttonBeenden2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonBeenden2.UseVisualStyleBackColor = false;
             // 
             // buttonAddEvent
             // 
@@ -128,106 +205,21 @@
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.controlCreateSwiss);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(0, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(875, 461);
             this.panelContent.TabIndex = 0;
             // 
-            // buttonLogout
+            // controlCreateSwiss
             // 
-            this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLogout.BackColor = System.Drawing.Color.White;
-            this.buttonLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonLogout.FlatAppearance.BorderSize = 0;
-            this.buttonLogout.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogout.Image = global::MainModule.Properties.Resources.key1_delete;
-            this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonLogout.Location = new System.Drawing.Point(708, 6);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(80, 60);
-            this.buttonLogout.TabIndex = 3;
-            this.buttonLogout.Text = "Ausloggen";
-            this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonLogout.UseVisualStyleBackColor = false;
-            // 
-            // buttonAllEvents
-            // 
-            this.buttonAllEvents.BackColor = System.Drawing.Color.White;
-            this.buttonAllEvents.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonAllEvents.FlatAppearance.BorderSize = 0;
-            this.buttonAllEvents.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonAllEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAllEvents.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAllEvents.Image = global::MainModule.Properties.Resources.joypad;
-            this.buttonAllEvents.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAllEvents.Location = new System.Drawing.Point(8, 6);
-            this.buttonAllEvents.Name = "buttonAllEvents";
-            this.buttonAllEvents.Size = new System.Drawing.Size(80, 60);
-            this.buttonAllEvents.TabIndex = 2;
-            this.buttonAllEvents.Text = "Alle Events";
-            this.buttonAllEvents.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAllEvents.UseVisualStyleBackColor = false;
-            // 
-            // buttonBeenden
-            // 
-            this.buttonBeenden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBeenden.BackColor = System.Drawing.Color.White;
-            this.buttonBeenden.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonBeenden.FlatAppearance.BorderSize = 0;
-            this.buttonBeenden.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonBeenden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBeenden.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBeenden.Image = global::MainModule.Properties.Resources.exit;
-            this.buttonBeenden.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonBeenden.Location = new System.Drawing.Point(794, 6);
-            this.buttonBeenden.Name = "buttonBeenden";
-            this.buttonBeenden.Size = new System.Drawing.Size(65, 60);
-            this.buttonBeenden.TabIndex = 1;
-            this.buttonBeenden.Text = "Beenden";
-            this.buttonBeenden.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonBeenden.UseVisualStyleBackColor = false;
-            this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
-            // 
-            // buttonMyEvents
-            // 
-            this.buttonMyEvents.BackColor = System.Drawing.Color.White;
-            this.buttonMyEvents.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonMyEvents.FlatAppearance.BorderSize = 0;
-            this.buttonMyEvents.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonMyEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMyEvents.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMyEvents.Image = global::MainModule.Properties.Resources.address_book;
-            this.buttonMyEvents.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonMyEvents.Location = new System.Drawing.Point(94, 6);
-            this.buttonMyEvents.Name = "buttonMyEvents";
-            this.buttonMyEvents.Size = new System.Drawing.Size(88, 60);
-            this.buttonMyEvents.TabIndex = 0;
-            this.buttonMyEvents.Text = "Meine Events";
-            this.buttonMyEvents.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonMyEvents.UseVisualStyleBackColor = false;
-            this.buttonMyEvents.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // buttonBeenden2
-            // 
-            this.buttonBeenden2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBeenden2.BackColor = System.Drawing.Color.White;
-            this.buttonBeenden2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonBeenden2.FlatAppearance.BorderSize = 0;
-            this.buttonBeenden2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonBeenden2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBeenden2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBeenden2.Image = global::MainModule.Properties.Resources.exit;
-            this.buttonBeenden2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonBeenden2.Location = new System.Drawing.Point(780, 6);
-            this.buttonBeenden2.Name = "buttonBeenden2";
-            this.buttonBeenden2.Size = new System.Drawing.Size(79, 60);
-            this.buttonBeenden2.TabIndex = 2;
-            this.buttonBeenden2.Text = "Beenden";
-            this.buttonBeenden2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonBeenden2.UseVisualStyleBackColor = false;
+            this.controlCreateSwiss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlCreateSwiss.Location = new System.Drawing.Point(0, 0);
+            this.controlCreateSwiss.Name = "controlCreateSwiss";
+            this.controlCreateSwiss.Size = new System.Drawing.Size(875, 461);
+            this.controlCreateSwiss.TabIndex = 0;
+            this.controlCreateSwiss.Visible = false;
             // 
             // FormMain
             // 
@@ -246,6 +238,7 @@
             this.tabControlRibbon.ResumeLayout(false);
             this.tabPageStartseite.ResumeLayout(false);
             this.tabPageAdmin.ResumeLayout(false);
+            this.panelContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -255,13 +248,13 @@
         private System.Windows.Forms.SplitContainer splitContainerRibbon;
         private System.Windows.Forms.TabControl tabControlRibbon;
         private System.Windows.Forms.TabPage tabPageStartseite;
-        private System.Windows.Forms.Button buttonMyEvents;
         private System.Windows.Forms.TabPage tabPageAdmin;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Button buttonBeenden;
         private System.Windows.Forms.Button buttonAddEvent;
-        private System.Windows.Forms.Button buttonAllEvents;
+        private System.Windows.Forms.Button buttonSwiss;
         private System.Windows.Forms.Button buttonBeenden2;
         private System.Windows.Forms.Button buttonLogout;
+        private EventModule.Gui.ControlCreateSwiss controlCreateSwiss;
     }
 }

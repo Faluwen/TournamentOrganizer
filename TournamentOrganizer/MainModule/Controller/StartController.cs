@@ -22,8 +22,6 @@ namespace MainModule.Controller
                 {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new FormMain());
-
                     //Anmeldeform anzeigen
                     using (FormLogin login = new FormLogin())
                     {
@@ -31,9 +29,8 @@ namespace MainModule.Controller
                         if (result == DialogResult.OK)
                         {
                             // Programm starten
-                            Application.EnableVisualStyles();
-                            Application.SetCompatibleTextRenderingDefault(false);
-                            Application.Run(new FormLogin());
+                            
+                            Application.Run(new FormMain());
 
                         }
                     }

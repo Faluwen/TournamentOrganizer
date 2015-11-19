@@ -85,6 +85,12 @@
     <Compile Include="Gui\ControlCreateEventPhase3.Designer.cs">
       <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gui\ControlCreateSwiss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ControlCreateSwiss.Designer.cs">
+      <DependentUpon>ControlCreateSwiss.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\ControlTournamentTile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="Gui\ControlCreateEventPhase3.resx">
       <DependentUpon>ControlCreateEventPhase3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ControlCreateSwiss.resx">
+      <DependentUpon>ControlCreateSwiss.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\ControlTournamentTile.resx">
       <DependentUpon>ControlTournamentTile.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +147,10 @@
     <ProjectReference Include="..\SwissModule\SwissModule.csproj">
       <Project>{a876b354-441a-4bb5-bd31-8d092ca715cc}</Project>
       <Name>SwissModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityModule\UtilityModule.csproj">
+      <Project>{511f17ff-1544-4310-9af4-67c0bbd41265}</Project>
+      <Name>UtilityModule</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
