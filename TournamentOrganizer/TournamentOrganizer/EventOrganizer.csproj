@@ -102,7 +102,9 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="login.txt" />
     <Content Include="meandsomerandoms_ZAK_icon.ico" />
+    <Content Include="swissFinalists.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">

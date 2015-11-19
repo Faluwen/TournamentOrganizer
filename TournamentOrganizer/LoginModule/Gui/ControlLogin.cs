@@ -1,10 +1,14 @@
-﻿using System;
+﻿using LoginModule.Controller;
+using System;
 using System.Windows.Forms;
+using UtilityModule.Data;
+using UtilityModule.Manager;
 
 namespace LoginModule.Gui
 {
     public partial class ControlLogin : UserControl
     {
+        internal Session session;
         public ControlLogin()
         {
             InitializeComponent();
@@ -17,12 +21,12 @@ namespace LoginModule.Gui
 
         private bool ValidatePassword()
         {
-            return true;
+            return String.IsNullOrEmpty(this.textBoxPassword.Text);
         }
 
         private bool ValidateUsername()
         {
-            return true;
+            return String.IsNullOrEmpty(this.textBoxUsername.Text);
         }
 
         private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -37,7 +41,10 @@ namespace LoginModule.Gui
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            // TODO: Login -> Datenbank Q_Q
+            if (ValidateTextEdits())
+            {
+                session = LoginController.Instance.Login(this.textBoxUsername.Text, CryptManager.Encrypt(this.textBoxPassword.Text));
+            }
         }
     }
 }

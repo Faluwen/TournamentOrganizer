@@ -5,7 +5,7 @@
         Conquest = 0,
         ConquestBann = 1,
         Team = 2,
-        DeckElim = 3,
-        DeckElimBann = 4
+        LastHeroStanding = 3,
+        LastHeroStandingBann = 4
     }
 }

@@ -2,6 +2,7 @@
 using MainModule.Gui;
 using System.Threading;
 using System.Windows.Forms;
+using UtilityModule.Manager;
 
 namespace MainModule.Controller
 {
@@ -18,8 +19,7 @@ namespace MainModule.Controller
             using (Mutex mutex = new Mutex(true, "TournamentOrganizer", out neugestartet))
             {
                 if (neugestartet)
-                { 
-
+                {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
                     Application.Run(new FormMain());

@@ -1,0 +1,5 @@
+﻿Faluwen|b2LNKwI7ppmO53sG0fN9oc3qwi/hhqfnel0CqLnVgnY=|100
+Paul|sVhIPeo8FX9OyyHGGvXMwJWxwoN/WB8UgZC4I2nPbxY=|100
+AdminTest|mR4PxnCE4zhFqG4lNkebniH1XbKKWq+szmwMCs2T0Qw=|100
+UserTest|mR4PxnCE4zhFqG4lNkebniH1XbKKWq+szmwMCs2T0Qw=|0
+BannedTest|mR4PxnCE4zhFqG4lNkebniH1XbKKWq+szmwMCs2T0Qw=|-1

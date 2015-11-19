@@ -57,6 +57,7 @@
     <Compile Include="Manager\CryptManager.cs" />
     <Compile Include="Manager\DatabaseManager.cs" />
     <Compile Include="Manager\ErrorLog.cs" />
+    <Compile Include="Manager\FileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

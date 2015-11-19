@@ -1,4 +1,6 @@
 ﻿using System;
+using UtilityModule.Data;
+using UtilityModule.Manager;
 
 namespace LoginModule.Controller
 {
@@ -8,11 +10,10 @@ namespace LoginModule.Controller
 
         private LoginController() { }
 
-        //internal Session Login(string username, string password, out string fehlermeldung)
-        //{
-        //    fehlermeldung = "";
-        //    return null;
-        //}
+        internal Session Login(string username, string password)
+        {
+            return FileManager.Instance.Login(username, password);
+        }
 
         internal void Register(string username, string password, out string fehlermeldung)
         {
