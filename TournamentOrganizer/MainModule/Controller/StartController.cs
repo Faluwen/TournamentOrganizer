@@ -18,7 +18,7 @@ namespace MainModule.Controller
             using (Mutex mutex = new Mutex(true, "TournamentOrganizer", out neugestartet))
             {
                 if (neugestartet)
-                {
+                { 
 
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
