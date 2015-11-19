@@ -33,13 +33,13 @@
             this.tabControlRibbon = new System.Windows.Forms.TabControl();
             this.tabPageStartseite = new System.Windows.Forms.TabPage();
             this.tabPageAdmin = new System.Windows.Forms.TabPage();
+            this.buttonAddEvent = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonAllEvents = new System.Windows.Forms.Button();
             this.buttonBeenden = new System.Windows.Forms.Button();
             this.buttonMyEvents = new System.Windows.Forms.Button();
             this.buttonBeenden2 = new System.Windows.Forms.Button();
-            this.buttonAddEvent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRibbon)).BeginInit();
             this.splitContainerRibbon.Panel1.SuspendLayout();
             this.splitContainerRibbon.Panel2.SuspendLayout();
@@ -107,6 +107,25 @@
             this.tabPageAdmin.Text = "Adminbereich";
             this.tabPageAdmin.UseVisualStyleBackColor = true;
             // 
+            // buttonAddEvent
+            // 
+            this.buttonAddEvent.BackColor = System.Drawing.Color.White;
+            this.buttonAddEvent.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonAddEvent.FlatAppearance.BorderSize = 0;
+            this.buttonAddEvent.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonAddEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddEvent.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddEvent.Image = global::MainModule.Properties.Resources.address_book_add;
+            this.buttonAddEvent.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAddEvent.Location = new System.Drawing.Point(8, 6);
+            this.buttonAddEvent.Name = "buttonAddEvent";
+            this.buttonAddEvent.Size = new System.Drawing.Size(97, 60);
+            this.buttonAddEvent.TabIndex = 1;
+            this.buttonAddEvent.Text = "Event erstellen";
+            this.buttonAddEvent.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAddEvent.UseVisualStyleBackColor = false;
+            this.buttonAddEvent.Click += new System.EventHandler(this.button2_Click);
+            // 
             // panelContent
             // 
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -124,7 +143,7 @@
             this.buttonLogout.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonLogout.Image = global::EventOrganizer.Properties.Resources.key1_delete;
+            this.buttonLogout.Image = global::MainModule.Properties.Resources.key1_delete;
             this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonLogout.Location = new System.Drawing.Point(708, 6);
             this.buttonLogout.Name = "buttonLogout";
@@ -142,7 +161,7 @@
             this.buttonAllEvents.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonAllEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAllEvents.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonAllEvents.Image = global::EventOrganizer.Properties.Resources.joypad;
+            this.buttonAllEvents.Image = global::MainModule.Properties.Resources.joypad;
             this.buttonAllEvents.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonAllEvents.Location = new System.Drawing.Point(8, 6);
             this.buttonAllEvents.Name = "buttonAllEvents";
@@ -161,7 +180,7 @@
             this.buttonBeenden.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonBeenden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBeenden.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonBeenden.Image = global::EventOrganizer.Properties.Resources.exit;
+            this.buttonBeenden.Image = global::MainModule.Properties.Resources.exit;
             this.buttonBeenden.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonBeenden.Location = new System.Drawing.Point(794, 6);
             this.buttonBeenden.Name = "buttonBeenden";
@@ -180,7 +199,7 @@
             this.buttonMyEvents.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonMyEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMyEvents.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonMyEvents.Image = global::EventOrganizer.Properties.Resources.address_book;
+            this.buttonMyEvents.Image = global::MainModule.Properties.Resources.address_book;
             this.buttonMyEvents.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonMyEvents.Location = new System.Drawing.Point(94, 6);
             this.buttonMyEvents.Name = "buttonMyEvents";
@@ -200,7 +219,7 @@
             this.buttonBeenden2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonBeenden2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBeenden2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonBeenden2.Image = global::EventOrganizer.Properties.Resources.exit;
+            this.buttonBeenden2.Image = global::MainModule.Properties.Resources.exit;
             this.buttonBeenden2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonBeenden2.Location = new System.Drawing.Point(780, 6);
             this.buttonBeenden2.Name = "buttonBeenden2";
@@ -209,25 +228,6 @@
             this.buttonBeenden2.Text = "Beenden";
             this.buttonBeenden2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonBeenden2.UseVisualStyleBackColor = false;
-            // 
-            // buttonAddEvent
-            // 
-            this.buttonAddEvent.BackColor = System.Drawing.Color.White;
-            this.buttonAddEvent.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonAddEvent.FlatAppearance.BorderSize = 0;
-            this.buttonAddEvent.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonAddEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddEvent.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.buttonAddEvent.Image = global::EventOrganizer.Properties.Resources.address_book_add;
-            this.buttonAddEvent.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAddEvent.Location = new System.Drawing.Point(8, 6);
-            this.buttonAddEvent.Name = "buttonAddEvent";
-            this.buttonAddEvent.Size = new System.Drawing.Size(97, 60);
-            this.buttonAddEvent.TabIndex = 1;
-            this.buttonAddEvent.Text = "Event erstellen";
-            this.buttonAddEvent.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAddEvent.UseVisualStyleBackColor = false;
-            this.buttonAddEvent.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormMain
             // 

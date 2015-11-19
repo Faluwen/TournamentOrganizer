@@ -29,6 +29,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>rpdoc.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="Friends.cs" />
     <Compile Include="Gui\ControlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -68,6 +75,11 @@
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Gui\ControlLogin.resx">
@@ -82,12 +94,22 @@
     <EmbeddedResource Include="Gui\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UtilityModule\UtilityModule.csproj">
       <Project>{511f17ff-1544-4310-9af4-67c0bbd41265}</Project>
       <Name>UtilityModule</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rpdoc.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meandsomerandoms.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

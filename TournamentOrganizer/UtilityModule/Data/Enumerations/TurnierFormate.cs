@@ -1,4 +1,4 @@
-﻿namespace EventOrganizer.Data.Enumerations
+﻿namespace UtilityModule.Data.Enumerations
 {
     public enum TurnierFormate
     {

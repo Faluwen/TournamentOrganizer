@@ -1,5 +1,5 @@
-﻿using System;
-using EventOrganizer.Controller;
+﻿using MainModule.Controller;
+using System;
 
 namespace EventOrganizer
 {

@@ -29,6 +29,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>rpdoc.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,9 +49,18 @@
   <ItemGroup>
     <Compile Include="Data\Player.cs" />
     <Compile Include="Data\Session.cs" />
+    <Compile Include="Data\Enumerations\Games.cs" />
+    <Compile Include="Data\Enumerations\MatchFormate.cs" />
+    <Compile Include="Data\Enumerations\TurnierFormate.cs" />
+    <Compile Include="Data\Enumerations\TurnierModi.cs" />
+    <Compile Include="Friends.cs" />
     <Compile Include="Manager\CryptManager.cs" />
+    <Compile Include="Manager\DatabaseManager.cs" />
     <Compile Include="Manager\ErrorLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rpdoc.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
