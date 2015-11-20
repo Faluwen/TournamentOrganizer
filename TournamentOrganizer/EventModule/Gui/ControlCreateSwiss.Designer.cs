@@ -48,6 +48,8 @@
             this.comboBoxBO = new System.Windows.Forms.ComboBox();
             this.comboBoxFormat = new System.Windows.Forms.ComboBox();
             this.buttonDOIT = new System.Windows.Forms.Button();
+            this.splitContainerFormat = new System.Windows.Forms.SplitContainer();
+            this.labelBO = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerContent)).BeginInit();
             this.splitContainerContent.Panel1.SuspendLayout();
@@ -62,6 +64,10 @@
             this.splitContainerFinalists.Panel2.SuspendLayout();
             this.splitContainerFinalists.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerFormat)).BeginInit();
+            this.splitContainerFormat.Panel1.SuspendLayout();
+            this.splitContainerFormat.Panel2.SuspendLayout();
+            this.splitContainerFormat.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelUeberschrift
@@ -169,6 +175,7 @@
             // splitContainerRechts
             // 
             this.splitContainerRechts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerRechts.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainerRechts.IsSplitterFixed = true;
             this.splitContainerRechts.Location = new System.Drawing.Point(0, 0);
             this.splitContainerRechts.Name = "splitContainerRechts";
@@ -178,19 +185,20 @@
             // 
             this.splitContainerRechts.Panel1.Controls.Add(this.splitContainerFinalists);
             this.splitContainerRechts.Panel1.Controls.Add(this.panel1);
+            this.splitContainerRechts.Panel1.Controls.Add(this.splitContainerFormat);
             // 
             // splitContainerRechts.Panel2
             // 
             this.splitContainerRechts.Panel2.Controls.Add(this.buttonDOIT);
             this.splitContainerRechts.Size = new System.Drawing.Size(398, 350);
-            this.splitContainerRechts.SplitterDistance = 163;
+            this.splitContainerRechts.SplitterDistance = 136;
             this.splitContainerRechts.TabIndex = 0;
             // 
             // splitContainerFinalists
             // 
-            this.splitContainerFinalists.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerFinalists.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitContainerFinalists.Enabled = false;
-            this.splitContainerFinalists.Location = new System.Drawing.Point(0, 107);
+            this.splitContainerFinalists.Location = new System.Drawing.Point(0, 81);
             this.splitContainerFinalists.Name = "splitContainerFinalists";
             // 
             // splitContainerFinalists.Panel1
@@ -202,7 +210,7 @@
             // 
             this.splitContainerFinalists.Panel2.Controls.Add(this.comboBoxFinalist);
             this.splitContainerFinalists.Panel2.Controls.Add(this.labelFinalist);
-            this.splitContainerFinalists.Size = new System.Drawing.Size(398, 56);
+            this.splitContainerFinalists.Size = new System.Drawing.Size(398, 55);
             this.splitContainerFinalists.SplitterDistance = 197;
             this.splitContainerFinalists.TabIndex = 1;
             // 
@@ -251,25 +259,23 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.checkBoxFinalists);
-            this.panel1.Controls.Add(this.labelFormat);
-            this.panel1.Controls.Add(this.comboBoxBO);
-            this.panel1.Controls.Add(this.comboBoxFormat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 107);
+            this.panel1.Size = new System.Drawing.Size(398, 25);
             this.panel1.TabIndex = 0;
             // 
             // checkBoxFinalists
             // 
             this.checkBoxFinalists.AutoSize = true;
             this.checkBoxFinalists.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFinalists.Location = new System.Drawing.Point(6, 82);
+            this.checkBoxFinalists.Location = new System.Drawing.Point(6, 3);
             this.checkBoxFinalists.Name = "checkBoxFinalists";
             this.checkBoxFinalists.Size = new System.Drawing.Size(287, 20);
             this.checkBoxFinalists.TabIndex = 11;
             this.checkBoxFinalists.Text = "Finalisten in der ersten Runde gegeneinander";
             this.checkBoxFinalists.UseVisualStyleBackColor = true;
+            this.checkBoxFinalists.CheckedChanged += new System.EventHandler(this.checkBoxFinalists_CheckedChanged);
             // 
             // labelFormat
             // 
@@ -277,9 +283,9 @@
             this.labelFormat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFormat.Location = new System.Drawing.Point(3, 3);
             this.labelFormat.Name = "labelFormat";
-            this.labelFormat.Size = new System.Drawing.Size(61, 16);
+            this.labelFormat.Size = new System.Drawing.Size(54, 16);
             this.labelFormat.TabIndex = 8;
-            this.labelFormat.Text = "Formate:";
+            this.labelFormat.Text = "Format:";
             // 
             // comboBoxBO
             // 
@@ -287,9 +293,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxBO.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxBO.FormattingEnabled = true;
-            this.comboBoxBO.Location = new System.Drawing.Point(6, 52);
+            this.comboBoxBO.Location = new System.Drawing.Point(6, 22);
             this.comboBoxBO.Name = "comboBoxBO";
-            this.comboBoxBO.Size = new System.Drawing.Size(389, 24);
+            this.comboBoxBO.Size = new System.Drawing.Size(188, 24);
             this.comboBoxBO.TabIndex = 10;
             // 
             // comboBoxFormat
@@ -300,7 +306,7 @@
             this.comboBoxFormat.FormattingEnabled = true;
             this.comboBoxFormat.Location = new System.Drawing.Point(6, 22);
             this.comboBoxFormat.Name = "comboBoxFormat";
-            this.comboBoxFormat.Size = new System.Drawing.Size(389, 24);
+            this.comboBoxFormat.Size = new System.Drawing.Size(188, 24);
             this.comboBoxFormat.TabIndex = 9;
             // 
             // buttonDOIT
@@ -311,10 +317,39 @@
             this.buttonDOIT.Font = new System.Drawing.Font("Tahoma", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDOIT.Location = new System.Drawing.Point(0, 0);
             this.buttonDOIT.Name = "buttonDOIT";
-            this.buttonDOIT.Size = new System.Drawing.Size(398, 183);
+            this.buttonDOIT.Size = new System.Drawing.Size(398, 210);
             this.buttonDOIT.TabIndex = 8;
             this.buttonDOIT.Text = "DO IT!";
             this.buttonDOIT.UseVisualStyleBackColor = false;
+            // 
+            // splitContainerFormat
+            // 
+            this.splitContainerFormat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitContainerFormat.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerFormat.Name = "splitContainerFormat";
+            // 
+            // splitContainerFormat.Panel1
+            // 
+            this.splitContainerFormat.Panel1.Controls.Add(this.labelFormat);
+            this.splitContainerFormat.Panel1.Controls.Add(this.comboBoxFormat);
+            // 
+            // splitContainerFormat.Panel2
+            // 
+            this.splitContainerFormat.Panel2.Controls.Add(this.labelBO);
+            this.splitContainerFormat.Panel2.Controls.Add(this.comboBoxBO);
+            this.splitContainerFormat.Size = new System.Drawing.Size(398, 56);
+            this.splitContainerFormat.SplitterDistance = 197;
+            this.splitContainerFormat.TabIndex = 2;
+            // 
+            // labelBO
+            // 
+            this.labelBO.AutoSize = true;
+            this.labelBO.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBO.Location = new System.Drawing.Point(3, 3);
+            this.labelBO.Name = "labelBO";
+            this.labelBO.Size = new System.Drawing.Size(64, 16);
+            this.labelBO.TabIndex = 10;
+            this.labelBO.Text = "Best of X:";
             // 
             // ControlCreateSwiss
             // 
@@ -342,6 +377,12 @@
             this.splitContainerFinalists.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.splitContainerFormat.Panel1.ResumeLayout(false);
+            this.splitContainerFormat.Panel1.PerformLayout();
+            this.splitContainerFormat.Panel2.ResumeLayout(false);
+            this.splitContainerFormat.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerFormat)).EndInit();
+            this.splitContainerFormat.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -368,5 +409,7 @@
         private System.Windows.Forms.Label labelFinalist;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListBox listBoxPlayers;
+        private System.Windows.Forms.SplitContainer splitContainerFormat;
+        private System.Windows.Forms.Label labelBO;
     }
 }

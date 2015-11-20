@@ -51,5 +51,17 @@ namespace EventModule.Gui
                 listBoxPlayers.Items.Add(textBoxNewPlayer.Text);
             }
         }
+
+        private void checkBoxFinalists_CheckedChanged(object sender, EventArgs e)
+        {
+            if ((sender as CheckBox).Checked)
+            {
+                splitContainerFinalists.Enabled = true;
+            }
+            else
+            {
+                splitContainerFinalists.Enabled = false;
+            }
+        }
     }
 }

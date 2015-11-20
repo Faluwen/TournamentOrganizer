@@ -34,16 +34,17 @@
             // 
             // controlLogin1
             // 
+            this.controlLogin1.BackColor = System.Drawing.SystemColors.Control;
             this.controlLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlLogin1.Location = new System.Drawing.Point(0, 0);
             this.controlLogin1.Name = "controlLogin1";
-            this.controlLogin1.Size = new System.Drawing.Size(265, 388);
+            this.controlLogin1.Size = new System.Drawing.Size(265, 415);
             this.controlLogin1.TabIndex = 0;
             // 
             // FormLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(265, 388);
+            this.ClientSize = new System.Drawing.Size(265, 415);
             this.Controls.Add(this.controlLogin1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

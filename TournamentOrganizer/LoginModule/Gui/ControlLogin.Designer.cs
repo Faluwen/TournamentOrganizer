@@ -35,6 +35,7 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.checkBoxRemember = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -42,7 +43,7 @@
             this.buttonLogin.BackColor = System.Drawing.Color.PapayaWhip;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(31, 316);
+            this.buttonLogin.Location = new System.Drawing.Point(31, 343);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(200, 42);
             this.buttonLogin.TabIndex = 13;
@@ -71,7 +72,7 @@
             // 
             this.linkLabelRegister.AutoSize = true;
             this.linkLabelRegister.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelRegister.Location = new System.Drawing.Point(12, 366);
+            this.linkLabelRegister.Location = new System.Drawing.Point(12, 393);
             this.linkLabelRegister.Name = "linkLabelRegister";
             this.linkLabelRegister.Size = new System.Drawing.Size(241, 16);
             this.linkLabelRegister.TabIndex = 10;
@@ -107,9 +108,21 @@
             this.panelLogo.Size = new System.Drawing.Size(200, 200);
             this.panelLogo.TabIndex = 6;
             // 
+            // checkBoxRemember
+            // 
+            this.checkBoxRemember.AutoSize = true;
+            this.checkBoxRemember.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRemember.Location = new System.Drawing.Point(6, 317);
+            this.checkBoxRemember.Name = "checkBoxRemember";
+            this.checkBoxRemember.Size = new System.Drawing.Size(106, 18);
+            this.checkBoxRemember.TabIndex = 14;
+            this.checkBoxRemember.Text = "Remember me";
+            this.checkBoxRemember.UseVisualStyleBackColor = true;
+            // 
             // ControlLogin
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.checkBoxRemember);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -118,7 +131,7 @@
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.panelLogo);
             this.Name = "ControlLogin";
-            this.Size = new System.Drawing.Size(265, 393);
+            this.Size = new System.Drawing.Size(265, 416);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +145,6 @@
         private System.Windows.Forms.LinkLabel linkLabelRegister;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.CheckBox checkBoxRemember;
     }
 }

@@ -9,6 +9,7 @@ namespace UtilityModule.Data
     public class Session
     {
         public string Username { get; set; } = String.Empty;
+        public string Password { get; set; } = String.Empty;
         public int Acclevel { get; set; } = 0;
     }
 }

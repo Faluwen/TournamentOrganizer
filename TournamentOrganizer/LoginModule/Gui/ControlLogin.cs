@@ -58,5 +58,13 @@ namespace LoginModule.Gui
                 return this.session;
             }
         }
+
+        internal bool RememberMe
+        {
+            get
+            {
+                return this.checkBoxRemember.Checked;
+            }
+        }
     }
 }

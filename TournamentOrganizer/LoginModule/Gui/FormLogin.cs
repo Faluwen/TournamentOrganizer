@@ -17,5 +17,13 @@ namespace LoginModule.Gui
                 return controlLogin1.Session;
             }
         }
+
+        internal bool RememberMe
+        {
+            get
+            {
+                return controlLogin1.RememberMe;
+            }
+        }
     }
 }

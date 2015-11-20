@@ -32,13 +32,16 @@
             this.splitContainerRibbon = new System.Windows.Forms.SplitContainer();
             this.tabControlRibbon = new System.Windows.Forms.TabControl();
             this.tabPageStartseite = new System.Windows.Forms.TabPage();
-            this.buttonSwiss = new System.Windows.Forms.Button();
-            this.buttonBeenden = new System.Windows.Forms.Button();
             this.tabPageAdmin = new System.Windows.Forms.TabPage();
-            this.buttonBeenden2 = new System.Windows.Forms.Button();
-            this.buttonAddEvent = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.controlCreateSwiss = new EventModule.Gui.ControlCreateSwiss();
+            this.buttonSettings = new System.Windows.Forms.Button();
+            this.buttonSwiss = new System.Windows.Forms.Button();
+            this.buttonBeenden = new System.Windows.Forms.Button();
+            this.buttonBeenden2 = new System.Windows.Forms.Button();
+            this.buttonAddEvent = new System.Windows.Forms.Button();
+            this.labelEingeloggtAls = new System.Windows.Forms.Label();
+            this.linkLabelLogout = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRibbon)).BeginInit();
             this.splitContainerRibbon.Panel1.SuspendLayout();
             this.splitContainerRibbon.Panel2.SuspendLayout();
@@ -84,6 +87,7 @@
             // tabPageStartseite
             // 
             this.tabPageStartseite.BackColor = System.Drawing.Color.White;
+            this.tabPageStartseite.Controls.Add(this.buttonSettings);
             this.tabPageStartseite.Controls.Add(this.buttonSwiss);
             this.tabPageStartseite.Controls.Add(this.buttonBeenden);
             this.tabPageStartseite.Location = new System.Drawing.Point(4, 22);
@@ -92,6 +96,56 @@
             this.tabPageStartseite.Size = new System.Drawing.Size(867, 71);
             this.tabPageStartseite.TabIndex = 0;
             this.tabPageStartseite.Text = "Startseite";
+            // 
+            // tabPageAdmin
+            // 
+            this.tabPageAdmin.Controls.Add(this.buttonBeenden2);
+            this.tabPageAdmin.Controls.Add(this.buttonAddEvent);
+            this.tabPageAdmin.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAdmin.Name = "tabPageAdmin";
+            this.tabPageAdmin.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAdmin.Size = new System.Drawing.Size(867, 71);
+            this.tabPageAdmin.TabIndex = 1;
+            this.tabPageAdmin.Text = "Adminbereich";
+            this.tabPageAdmin.UseVisualStyleBackColor = true;
+            // 
+            // panelContent
+            // 
+            this.panelContent.Controls.Add(this.controlCreateSwiss);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(0, 0);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(875, 461);
+            this.panelContent.TabIndex = 0;
+            // 
+            // controlCreateSwiss
+            // 
+            this.controlCreateSwiss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlCreateSwiss.Location = new System.Drawing.Point(0, 0);
+            this.controlCreateSwiss.Name = "controlCreateSwiss";
+            this.controlCreateSwiss.Size = new System.Drawing.Size(875, 461);
+            this.controlCreateSwiss.TabIndex = 0;
+            this.controlCreateSwiss.Visible = false;
+            // 
+            // buttonSettings
+            // 
+            this.buttonSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSettings.BackColor = System.Drawing.Color.White;
+            this.buttonSettings.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonSettings.FlatAppearance.BorderSize = 0;
+            this.buttonSettings.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSettings.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSettings.Image = global::MainModule.Properties.Resources.process_idle_kde;
+            this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonSettings.Location = new System.Drawing.Point(700, 6);
+            this.buttonSettings.Name = "buttonSettings";
+            this.buttonSettings.Size = new System.Drawing.Size(88, 60);
+            this.buttonSettings.TabIndex = 3;
+            this.buttonSettings.Text = "Einstellungen";
+            this.buttonSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonSettings.UseVisualStyleBackColor = false;
+            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
             // buttonSwiss
             // 
@@ -132,18 +186,6 @@
             this.buttonBeenden.UseVisualStyleBackColor = false;
             this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
             // 
-            // tabPageAdmin
-            // 
-            this.tabPageAdmin.Controls.Add(this.buttonBeenden2);
-            this.tabPageAdmin.Controls.Add(this.buttonAddEvent);
-            this.tabPageAdmin.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAdmin.Name = "tabPageAdmin";
-            this.tabPageAdmin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAdmin.Size = new System.Drawing.Size(867, 71);
-            this.tabPageAdmin.TabIndex = 1;
-            this.tabPageAdmin.Text = "Adminbereich";
-            this.tabPageAdmin.UseVisualStyleBackColor = true;
-            // 
             // buttonBeenden2
             // 
             this.buttonBeenden2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -182,34 +224,46 @@
             this.buttonAddEvent.UseVisualStyleBackColor = false;
             this.buttonAddEvent.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panelContent
+            // labelEingeloggtAls
             // 
-            this.panelContent.Controls.Add(this.controlCreateSwiss);
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.Location = new System.Drawing.Point(0, 0);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(875, 461);
-            this.panelContent.TabIndex = 0;
+            this.labelEingeloggtAls.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelEingeloggtAls.AutoSize = true;
+            this.labelEingeloggtAls.BackColor = System.Drawing.Color.White;
+            this.labelEingeloggtAls.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEingeloggtAls.Location = new System.Drawing.Point(250, 5);
+            this.labelEingeloggtAls.Name = "labelEingeloggtAls";
+            this.labelEingeloggtAls.Size = new System.Drawing.Size(135, 14);
+            this.labelEingeloggtAls.TabIndex = 4;
+            this.labelEingeloggtAls.Text = "Eingeloggt als: Faluwen";
+            this.labelEingeloggtAls.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // controlCreateSwiss
+            // linkLabelLogout
             // 
-            this.controlCreateSwiss.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlCreateSwiss.Location = new System.Drawing.Point(0, 0);
-            this.controlCreateSwiss.Name = "controlCreateSwiss";
-            this.controlCreateSwiss.Size = new System.Drawing.Size(875, 461);
-            this.controlCreateSwiss.TabIndex = 0;
-            this.controlCreateSwiss.Visible = false;
+            this.linkLabelLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabelLogout.AutoSize = true;
+            this.linkLabelLogout.BackColor = System.Drawing.Color.White;
+            this.linkLabelLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogout.Location = new System.Drawing.Point(450, 5);
+            this.linkLabelLogout.Name = "linkLabelLogout";
+            this.linkLabelLogout.Size = new System.Drawing.Size(64, 14);
+            this.linkLabelLogout.TabIndex = 5;
+            this.linkLabelLogout.TabStop = true;
+            this.linkLabelLogout.Text = "Ausloggen";
+            this.linkLabelLogout.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 562);
+            this.Controls.Add(this.labelEingeloggtAls);
+            this.Controls.Add(this.linkLabelLogout);
             this.Controls.Add(this.splitContainerRibbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tournament Organizer";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.splitContainerRibbon.Panel1.ResumeLayout(false);
             this.splitContainerRibbon.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRibbon)).EndInit();
@@ -219,6 +273,7 @@
             this.tabPageAdmin.ResumeLayout(false);
             this.panelContent.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -234,5 +289,8 @@
         private System.Windows.Forms.Button buttonSwiss;
         private System.Windows.Forms.Button buttonBeenden2;
         private EventModule.Gui.ControlCreateSwiss controlCreateSwiss;
+        private System.Windows.Forms.Button buttonSettings;
+        private System.Windows.Forms.LinkLabel linkLabelLogout;
+        private System.Windows.Forms.Label labelEingeloggtAls;
     }
 }

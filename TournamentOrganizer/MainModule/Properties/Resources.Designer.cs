@@ -93,6 +93,16 @@ namespace MainModule.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gear {
+            get {
+                object obj = ResourceManager.GetObject("gear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap joypad {
             get {
                 object obj = ResourceManager.GetObject("joypad", resourceCulture);
@@ -106,6 +116,16 @@ namespace MainModule.Properties {
         internal static System.Drawing.Bitmap key1_delete {
             get {
                 object obj = ResourceManager.GetObject("key1_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap process_idle_kde {
+            get {
+                object obj = ResourceManager.GetObject("process-idle-kde", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

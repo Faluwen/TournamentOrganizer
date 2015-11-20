@@ -35,6 +35,7 @@ namespace UtilityModule.Manager
                         session = new Session();
                         session.Acclevel = Int32.Parse(accData[2]);
                         session.Username = username;
+                        session.Password = password;
                         break;
                     }
                 }
